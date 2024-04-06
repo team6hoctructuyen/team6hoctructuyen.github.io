@@ -1,15 +1,22 @@
-// Hiển thị nội dung tương ứng khi click vào menu
-const menuItems = document.querySelectorAll(".menu ul li a");
-const contentSections = document.querySelectorAll(".content section");
+var a = document.getElementById("loginBtn");
+var b = document.getElementById("registerBtn");
+var x = document.getElementById("login");
+var y = document.getElementById("register");
 
-for (let i = 0; i < menuItems.length; i++) {
-menuItems[i].addEventListener("click", function() {
-for (let j = 0; j < contentSections.length; j++) {
-contentSections[j].classList.add("hidden");
-}
-contentSections[i].classList.remove("hidden");
-});
+function login() {
+    x.style.left = "4px";
+    y.style.right = "-520px";
+    a.className += " white-btn";
+    b.className = "btn";
+    x.style.opacity = 1;
+    y.style.opacity = 0;
 }
 
-// Hiển thị nội dung mặc định
-contentSections[0].classList.remove("hidden");
+function register() {
+    x.style.left = "-520px";
+    y.style.right = "4px";
+    a.className = "btn";
+    b.className += " white-btn";
+    x.style.opacity = 0;
+    y.style.opacity = 1;
+}
