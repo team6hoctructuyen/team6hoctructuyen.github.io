@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Let's Study</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Ludiflex | Login & Registration</title>
 </head>
 <body>
-<div class="wrapper">
+ <div class="wrapper">
     <nav class="nav">
         <div class="nav-logo">
-            <p>Let's Study</p>
+            <p>LOGO .</p>
         </div>
-        <div class="nav-menu">
+        <div class="nav-menu" id="navMenu">
             <ul>
                 <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#" class="link">Course</a></li>
-                <li><a href="#" class="link">Profile</a></li>
-                <li><a href="#" class="link">Contact</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
             </ul>
         </div>
         <div class="nav-button">
@@ -26,15 +27,13 @@
             <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
         </div>
         <div class="nav-menu-btn">
-            <i class='bx bx-menu' onclick="myMenuFuntion()"></i>
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
         </div>
     </nav>
-
-<!----------------------------------Hộp menu-------------------------------------------------->
+<!----------------------------- Form box ----------------------------------->    
     <div class="form-box">
-
-        <!--------------Mẫu đăng nhập----------------->
-
+        
+        <!------------------- login form -------------------------->
         <div class="login-container" id="login">
             <div class="top">
                 <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
@@ -57,17 +56,16 @@
                     <label for="login-check"> Remember Me</label>
                 </div>
                 <div class="two">
-                    <label><a href="#">I Forgot password</a></label>
+                    <label><a href="#">Forgot password?</a></label>
                 </div>
             </div>
         </div>
-        <!--------------Mẫu đăng ký----------------->
-
+        <!------------------- registration form -------------------------->
         <div class="register-container" id="register">
             <div class="top">
                 <span>Have an account? <a href="#" onclick="login()">Login</a></span>
                 <header>Sign Up</header>
-            </div>        
+            </div>
             <div class="two-forms">
                 <div class="input-box">
                     <input type="text" class="input-field" placeholder="Firstname">
@@ -97,10 +95,11 @@
                 <div class="two">
                     <label><a href="#">Terms & conditions</a></label>
                 </div>
-            </div>       
+            </div>
         </div>
     </div>
-</div>
+</div>   
+<script src="script1.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
