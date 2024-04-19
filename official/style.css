@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-   --main-color:#8e44ad;
+   --main-color:#0c6bfa;
    --red:#e74c3c;
    --orange:#f39c12;
    --light-color:#888;
@@ -1272,32 +1272,6 @@ section{
    width: 100%;
    margin: 1rem 0;
 }
-
-
-
-
-
-
-.footer{
-   background-color: var(--white);
-   border-top: var(--border);
-   position: sticky;
-   bottom: 0; left: 0; right: 0;
-   text-align: center;
-   font-size: 2rem;
-   padding:2.5rem 2rem;
-   color:var(--black);
-   margin-top: 1rem;
-   z-index: 1000;
-   /* padding-bottom: 9.5rem; */
-}
-
-.footer span{
-   color:var(--main-color);
-}
-
-
-
 @media (max-width:1200px){
 
    body{
